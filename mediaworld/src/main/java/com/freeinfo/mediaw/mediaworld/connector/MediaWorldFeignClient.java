@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.freeinfo.mediaw.mediaworld.model.MediaAvabilityDTO;
 
-@FeignClient(name="mediawrold", url = "${client.mediaworld.base_url}")
+@FeignClient(name="FeignMW", url = "${client.mediaworld.base_url}")
 public interface MediaWorldFeignClient {
 
     @GetMapping("{itemCode}/{cordinate}")
